@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+.first-sub-banner, .second-sub-banner {
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 400px;
+}
+
+.first-sub-banner, .second-sub-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.first-sub-banner h1, .second-sub-banner h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.first-sub-banner {
+  background-image: url('../img/subpage/sub-banner.jpg');
+}
+
+.second-sub-banner {
+  background-image: url('../img/subpage/service-banner.jpg');
+}
+
+.product-area .col{
+  padding: 0 100px;
+  box-sizing: border-box;
+}
+.product-area .row .col .nav {
+  justify-content: center;
+}
+
+.product-area .row .col .nav li a {
+  color: black;
+}
+
+.product-area .row .col .nav li a.active {
+  color: rgba(219, 82, 0);
+}
+
+.tab-content {
+  margin-top: 40px;
+}
+
+.tab-content .content-inner {
+  display: flex;
+}
+
+.tab-content .content-inner .content-one ul {
+  width: 350px;
+}
+
+.tab-content .content-inner .content-one ul li {
+  line-height: 1.2;
+}
+
+.tab-content .content-inner .content-one ul li span {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.tab-content .content-inner .content-one ul li label {
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.1px;
+}
+
+.tab-content .content-inner .content-two .row {
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.tab-content .content-inner .content-two h5 img {
+  width: 300px;
+}
+
+.pagination {
+  justify-content: center;
+}
+
+
+.service-content-inner {
+  text-align: center;
+}

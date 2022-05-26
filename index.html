@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>bootstrap2</title>
+  <title>한국타이어</title>
   <!-- bootstrap css code -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
@@ -12,50 +12,50 @@
 </head>
 
 <body>
-  <div id="header-top">
-    <div class="container">
-      <div class="row">
-        <div class="col-9 col-md-9">
-          <ul id="gnb" class="nav">
-            <li class="nav-item">
-              <a class="nav-link active" href="#">전기차 타이어</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">승용차 타이어</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">SUV 타이어</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">소형트럭 타이어</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">트럭/버스 타이어</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">레이싱 타이어</a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-auto justify-content-end">
-          <ul id="gnb" class="nav">
-            <li class="nav-item">
-              <a class="nav-link active" href="#">대한민국</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">글로벌 사이트</a>
-            </li>
-          </ul>
+  <header id="header">
+    <div id="header-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-9 col-md-9">
+            <ul id="gnb" class="nav">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">전기차 타이어</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">승용차 타이어</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">SUV 타이어</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">소형트럭 타이어</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">트럭/버스 타이어</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">레이싱 타이어</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-auto">
+            <ul id="gnb" class="nav">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">대한민국</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">글로벌 사이트</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <header id="header">
     <div class="container-fluid">
       <div class="row">
         <!-- logo -->
         <div class="col col-md-2">
-          <h1 class="logo"><img src="./img/logo.svg" alt="logo01"></h1>
+          <h1 class="logo"><a href="#"><img src="./img/logo.svg" alt="logo01"></a></h1>
         </div>
         <!-- gnb -->
         <div class="col-12 col-md-6">
@@ -67,7 +67,7 @@
                   타이어
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <a class="dropdown-item" href="#">차종별 찾기</a>
+                  <a class="dropdown-item" href="./tire-page/tirepage.html">차종별 찾기</a>
                   <a class="dropdown-item" href="#">계절별 찾기</a>
                   <a class="dropdown-item" href="#">브랜드별 찾기</a>
                 </div>
@@ -114,13 +114,12 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col zero-pd">
-          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="10000">
             <ol class="carousel-indicators">
               <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
               <li data-target="#myCarousel" data-slide-to="1"></li>
               <li data-target="#myCarousel" data-slide-to="2"></li>
               <li data-target="#myCarousel" data-slide-to="3"></li>
-              <li data-target="#myCarousel" data-slide-to="4"></li>
             </ol>
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -136,7 +135,7 @@
                   </div>
                 </div>
               </div>
-              <div class="carousel-item">
+              <div class="carousel-item" data-interval="12000">
                 <video class="main_video01" autoplay loop muted preload="auto">
                   <source src="./video/local_main_01.webm">
                   no video
@@ -233,8 +232,6 @@
           <div class="jumbotron">
             <h1 class="display-4">Kinergy 4s2</h1>
             <p class="lead">빗길, 눈길에 안전성을 강화한 All weather 타이어</p>
-            <hr class="my-4">
-            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
             <a class="btn btn-primary btn-lg" href="#" role="button">자세히 보기 <i class="bi bi-arrow-right-circle"></i></a>
           </div>
         </div>
@@ -371,88 +368,138 @@
           <img src="./img/th-banner.jpg" class="card-img-top">
           <div class="card-body">
             <h5 class="card-title">Why Hankook</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <p class="card-text">한국타이어는 끊임없는 혁신으로 미래 드라이빙을 선도하는 글로벌 Top Tier 기업으로 도약합니.</p>
+            <a href="#" class="btn btn-primary">자세히보기 <i class="bi bi-arrow-right-circle"></i></a>
           </div>
         </div>
       </div>
     </div>
-    <div class="container-fluid">
-      <h2>Tip</h2>
+    <div class="container-fluid mg-tb">
+      <h2>Media Center</h2>
       <div class="row">
         <div class="col">
-          <img src="./img/m_02.png" class="card-img-top" alt="...">
+          <img src="./img/m_img/m_img01.webp" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <h5 class="card-title">Product</h5>
+            <p class="card-text">한국타이어, 혁신 기술력 집약된 신상품 '벤투스 슈퍼 스포츠' 상품군 3종 출시</p>
           </div>
         </div>
         <div class="col">
-          <img src="./img/m_02.png" class="card-img-top" alt="...">
+          <img src="./img/m_img/m_img02.webp" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <h5 class="card-title">Company</h5>
+            <p class="card-text">한국타이어, 글로벌 정보보안 인증 'TISAX' 흭득</p>
           </div>
         </div>
         <div class="col">
-          <img src="./img/m_02.png" class="card-img-top" alt="...">
+          <img src="./img/m_img/m_img03.jpg" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <h5 class="card-title">OE</h5>
+            <p class="card-text">한국타이어, 메르세데스-벤츠 'S클래스'에 신차용 타이어 공급</p>
           </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container cc">
+      <h2>Tips & Support</h2>
+      <div class="row">
+        <div class="col-lg-3">
+          <img src="./img/icon/icon_01.svg" alt="icon_01">
+          <h3>보증</h3>
+          <p>타이어 보증관리</p>
+          <p><a class="btn btn-secondary" href="#">자세히 보기 <i class="bi bi-arrow-right-circle"></i></a></p>
+        </div>
+        <div class="col-lg-3">
+          <img src="./img/icon/icon_02.svg" alt="icon_02">
+          <h3>드라이빙 팁</h3>
+          <p>운전자를 위한 3가지 팁</p>
+          <p><a class="btn btn-secondary" href="#">자세히 보기 <i class="bi bi-arrow-right-circle"></i></a></p>
+        </div>
+        <div class="col-lg-3">
+          <img src="./img/icon/icon_03.svg" alt="icon_03">
+          <h3>케어 가이드</h3>
+          <p>타이어 관리 팁</p>
+          <p><a class="btn btn-secondary" href="#">자세히 보기 <i class="bi bi-arrow-right-circle"></i></a></p>
+        </div>
+        <div class="col-lg-3">
+          <img src="./img/icon/icon_04.svg" alt="icon_04">
+          <h3>타이어 가이드</h3>
+          <p>올바른 타이어를 고르기 위한 가이드</p>
+          <p><a class="btn btn-secondary" href="#">자세히 보기 <i class="bi bi-arrow-right-circle"></i></a></p>
         </div>
       </div>
     </div>
   </main>
+  <div class="w-100"></div>
   <footer class="container py-5">
     <div class="row">
       <div class="col-12 col-md">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mb-2" role="img" viewBox="0 0 24 24" focusable="false">
           <title>Product</title>
-          <circle cx="12" cy="12" r="10" />
+          <i class="bi bi-globe2"></i>
           <path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94" />
         </svg>
         <small class="d-block mb-3 text-muted">&copy; 2017-2021</small>
       </div>
-      <div class="col-6 col-md">
-        <h5>Features</h5>
+      <div class="col col-md">
+        <h5>차종별 찾기</h5>
         <ul class="list-unstyled text-small">
-          <li><a class="text-muted" href="#">Cool stuff</a></li>
-          <li><a class="text-muted" href="#">Random feature</a></li>
-          <li><a class="text-muted" href="#">Team feature</a></li>
-          <li><a class="text-muted" href="#">Stuff for developers</a></li>
-          <li><a class="text-muted" href="#">Another one</a></li>
-          <li><a class="text-muted" href="#">Last time</a></li>
+          <li><a class="text-muted" href="#">전기차 타이어</a></li>
+          <li><a class="text-muted" href="#">승용차 타이어</a></li>
+          <li><a class="text-muted" href="#">SUV 타이어</a></li>
+          <li><a class="text-muted" href="#">소형트럭 타이어</a></li>
+          <li><a class="text-muted" href="#">트럭/버스 타이어</a></li>
+          <li><a class="text-muted" href="#">레이싱 타이어</a></li>
         </ul>
       </div>
-      <div class="col-6 col-md">
-        <h5>Resources</h5>
+      <div class="col col-md">
+        <h5>브랜드별 찾기</h5>
         <ul class="list-unstyled text-small">
-          <li><a class="text-muted" href="#">Resource</a></li>
-          <li><a class="text-muted" href="#">Resource name</a></li>
-          <li><a class="text-muted" href="#">Another resource</a></li>
-          <li><a class="text-muted" href="#">Final resource</a></li>
+          <li><a class="text-muted" href="#">브랜드 소개</a></li>
+          <li><a class="text-muted" href="#">벤투스</a></li>
+          <li><a class="text-muted" href="#">다이나프로</a></li>
+          <li><a class="text-muted" href="#">키너지</a></li>
+          <li><a class="text-muted" href="#">윈터 아이셉트</a></li>
+          <li><a class="text-muted" href="#">밴트라</a></li>
+          <li><a class="text-muted" href="#">스마트</a></li>
         </ul>
       </div>
-      <div class="col-6 col-md">
-        <h5>Resources</h5>
+      <div class="col col-md">
+        <h5>고객지원</h5>
         <ul class="list-unstyled text-small">
-          <li><a class="text-muted" href="#">Business</a></li>
-          <li><a class="text-muted" href="#">Education</a></li>
-          <li><a class="text-muted" href="#">Government</a></li>
-          <li><a class="text-muted" href="#">Gaming</a></li>
+          <li><a class="text-muted" href="#">서비스 & 보증</a></li>
+          <li><a class="text-muted" href="#">드라이빙 팁</a></li>
+          <li><a class="text-muted" href="#">케어 가이드</a></li>
+          <li><a class="text-muted" href="#">타이어 가이드</a></li>
+          <li><a class="text-muted" href="#">모상보증 서비스</a></li>
+          <li><a class="text-muted" href="#">모상점검 서비스</a></li>
+          <li><a class="text-muted" href="#">고객 문의</a></li>
         </ul>
       </div>
-      <div class="col-6 col-md">
-        <h5>About</h5>
+      <div class="col col-md">
+        <h5>기업정보</h5>
         <ul class="list-unstyled text-small">
-          <li><a class="text-muted" href="#">Team</a></li>
-          <li><a class="text-muted" href="#">Locations</a></li>
-          <li><a class="text-muted" href="#">Privacy</a></li>
-          <li><a class="text-muted" href="#">Terms</a></li>
+          <li><a class="text-muted" href="#">회사소개</a></li>
+          <li><a class="text-muted" href="#">미디어센터</a></li>
+          <li><a class="text-muted" href="#">어워드</a></li>
+          <li><a class="text-muted" href="#">글로벌 네트워크</a></li>
+          <li><a class="text-muted" href="#">모터스포츠</a></li>
+          <li><a class="text-muted" href="#">Hankooktire ESG</a></li>
+          <li><a class="text-muted" href="#">재무현황</a></li>
+          <li><a class="text-muted" href="#">투자자 보고서</a></li>
+        </ul>
+      </div>
+      <div class="col col-md">
+        <h5>채용정보</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="text-muted" href="#">Proactive Leader</a></li>
+          <li><a class="text-muted" href="#">Proactive Culture</a></li>
+          <li><a class="text-muted" href="#">Proactive HR</a></li>
+          <li><a class="text-muted" href="#">채용안내</a></li>
+          <li><a class="text-muted" href="#">인사제도</a></li>
+          <li><a class="text-muted" href="#">교육제도</a></li>
+          <li><a class="text-muted" href="#">입사지원</a></li>
         </ul>
       </div>
     </div>
